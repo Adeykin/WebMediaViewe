@@ -1,0 +1,16 @@
+img {
+    max-width: 640px;
+    padding: 5px;
+    #border-width: 10px;
+    #border-color: blue;
+}
+
+.UP {
+    #border-color: red;
+    background-color: red;
+}
+
+.DOWN {
+    #border-color: green;
+    background-color: green;
+}
