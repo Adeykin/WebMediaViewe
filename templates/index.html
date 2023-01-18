@@ -11,7 +11,7 @@
 <body>
     <div id='images'>
         {% for pair in images %}
-        <img src="{{url_for('downloadFile', filename=pair[0])}}" alt="{{pair[0]}}" class="{{pair[1]}}"/>
+        <img src="{{url_for('downloadFile', filename=pair[0], bbox=pair[2], label=pair[1])}}" alt="{{pair[0]}}" class="{{pair[1]}}"/>
         {% endfor %}
         <a href="{{url_for('mainPage', pagesNum=pagesNum, page=page+1, folderPath=folderPath)}}">NEXT</a>
     </div>
